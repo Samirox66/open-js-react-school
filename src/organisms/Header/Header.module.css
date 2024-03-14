@@ -1,0 +1,29 @@
+.header {
+    width: 100%;
+    padding: 50px 96px 0 96px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 98px;
+    padding: 9px 0;
+    box-sizing: border-box;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logoLabel {
+    color: #6c5fbc;
+    font-size: 1.1rem;
+    line-height: 1.43rem;
+    margin: 0;
+}
