@@ -22,6 +22,8 @@
 }
 
 .logoLabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     color: #6c5fbc;
     font-size: 1.1rem;
     line-height: 1.43rem;

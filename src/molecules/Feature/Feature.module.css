@@ -1,0 +1,7 @@
+.feature {
+    max-width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}

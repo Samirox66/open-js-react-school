@@ -2,7 +2,7 @@ import { Divider, Logo } from "../../atoms";
 import { Menu } from "../../molecules";
 
 import Css from "./Header.module.css";
-import logo from "../../resources/logo.png";
+import logo from "../../resources/imgs/logo.png";
 
 export default function Header() {
     return (
