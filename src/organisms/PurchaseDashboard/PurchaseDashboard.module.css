@@ -1,0 +1,27 @@
+.block {
+    display: flex;
+    gap: 140.71px;
+    padding: 131px 83.29px 41px 111px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    max-width: 560px;
+}
+
+.img {
+    width: 534px;
+    height: 457.81px;
+}
+
+.dishes {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 0;
+}

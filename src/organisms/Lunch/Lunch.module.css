@@ -1,0 +1,14 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 104px 95px 0 95px;
+    box-sizing: border-box;
+}
+
+.lunchesContainer {
+    display: flex;
+    gap: 25px;
+    margin-top: 87px;
+    margin-bottom: 228px;
+}

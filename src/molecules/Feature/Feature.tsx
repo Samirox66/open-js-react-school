@@ -9,7 +9,7 @@ export interface FeatureProps {
 export default function Feature({ title, paragraph }: FeatureProps) {
     return (
         <div className={Css.feature}>
-            <H3Title title={title} />
+            <H3Title color={"light"}>{title}</H3Title>
             <Paragraph paragraph={paragraph} type="lightgray" />
         </div>
     );

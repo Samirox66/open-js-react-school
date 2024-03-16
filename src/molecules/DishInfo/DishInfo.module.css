@@ -1,0 +1,40 @@
+.dishInfo {
+    border-radius: 30.02px;
+    border: 1.25px solid #f4f4f6;
+    box-shadow: 5.95px 71.35px 35.67px 0 rgba(229, 229, 229, 0.7);
+}
+
+.container {
+    padding: 10px 0 18px 34px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontalContainer {
+    display: flex;
+    align-items: center;
+    gap: 2.86px;
+}
+
+.tag {
+    color: #daa31a;
+    background-color: #f7edd0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+    width: fit-content;
+    padding: 3px 6px 3px 7px;
+    box-sizing: border-box;
+    border-radius: 5.4px;
+    margin: 0;
+}
+
+.time {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    line-height: 1.29rem;
+    font-weight: 400;
+    color: #8e97a6;
+    margin: 0;
+}
