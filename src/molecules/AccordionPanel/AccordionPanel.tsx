@@ -15,10 +15,7 @@ export default function AccordionPanel({
     onOpen,
 }: AccordionPanelProps) {
     return (
-        <li
-            style={{ maxHeight: isOpen ? "160px" : "100px" }}
-            className={Css.panel}
-        >
+        <li className={Css.panel}>
             <div className={Css.questionContainer}>
                 <p className={Css.question}>{question}</p>
 
@@ -26,15 +23,7 @@ export default function AccordionPanel({
                     {isOpen ? "+" : "-"}
                 </button>
             </div>
-            <p
-                style={{
-                    opacity: isOpen ? 1 : 0,
-                    marginBottom: isOpen ? "40px" : "20px",
-                }}
-                className={Css.answer}
-            >
-                {isOpen && answer}
-            </p>
+            {isOpen && <p className={Css.answer}>{answer}</p>}
             <Divider />
         </li>
     );

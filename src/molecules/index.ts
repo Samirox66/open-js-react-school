@@ -8,6 +8,8 @@ import Accordion from "./Accordion/Accordion";
 import AccordionPanel, {
     AccordionPanelProps,
 } from "./AccordionPanel/AccordionPanel";
+import Review from "./Review/Review";
+import Slider from "./Slider/Slider";
 
 export {
     Menu,
@@ -18,5 +20,7 @@ export {
     DishInfo,
     Accordion,
     AccordionPanel,
+    Review,
+    Slider,
 };
 export type { FeatureProps, DishInfoProps, DishProps, AccordionPanelProps };

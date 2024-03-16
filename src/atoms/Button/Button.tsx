@@ -1,18 +1,25 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler, PropsWithChildren } from "react";
 import Css from "./Button.module.css";
 
-interface ButtonProps {
+interface ButtonProps extends PropsWithChildren {
     type: "primary" | "secondary";
-    label: string;
+    width?: string;
     onClick: MouseEventHandler<HTMLButtonElement>;
 }
 
-export default function Button({ type, label, onClick }: ButtonProps) {
-    const classes = `button ${type == "primary" ? Css.primary : Css.secondary}`;
+export default function Button({
+    type,
+    children,
+    onClick,
+    width,
+}: ButtonProps) {
+    const classes = `${Css.button} ${
+        type == "primary" ? Css.primary : Css.secondary
+    }`;
 
     return (
-        <button className={classes} onClick={onClick}>
-            {label}
+        <button style={{ width }} className={classes} onClick={onClick}>
+            {children}
         </button>
     );
 }
