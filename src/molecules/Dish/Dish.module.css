@@ -6,6 +6,7 @@
     padding: 8px 23px 7px 15px;
     gap: 35px;
     box-shadow: 0 16.41px 24.61px 0 rgba(70, 70, 70, 0.05);
+    width: 330px;
 }
 
 .dish {

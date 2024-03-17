@@ -17,7 +17,7 @@ export default function AccordionPanel({
     return (
         <li className={Css.panel}>
             <div className={Css.containerWithoutDivider}>
-                <div className={Css.questionContainer}>
+                <label className={Css.questionContainer}>
                     <p className={Css.question}>{question}</p>
 
                     <button
@@ -27,7 +27,7 @@ export default function AccordionPanel({
                     >
                         {isOpen ? "+" : "-"}
                     </button>
-                </div>
+                </label>
                 <p className={Css.answer} data-open={isOpen}>
                     {answer}
                 </p>

@@ -9,6 +9,14 @@
 }
 
 .title {
-    max-width: 408px;
+    max-width: 466px;
     text-align: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.lines {
+    position: relative;
+    top: -18.46px;
 }

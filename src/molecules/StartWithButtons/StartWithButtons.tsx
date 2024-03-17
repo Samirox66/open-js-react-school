@@ -6,7 +6,7 @@ export default function StartWithButtons() {
         <section className={Css.block}>
             <div className={Css.overContainer}>
                 <div className={Css.divider} />
-                <p className={Css.over}>Over 1000</p>
+                <p className={Css.over}>Over 1000 users</p>
             </div>
             <div className={Css.textContainer}>
                 <H1Title>

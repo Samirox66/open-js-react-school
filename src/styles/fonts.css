@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: "Poppins";
+    src: local("Poppins") url("../resources/fonts/poppins/Poppins-Medium.ttf")
+        format("opentype");
+    font-style: italic;
+}
+
+@font-face {
     font-family: "Inter";
     src: local("Inter") url("../resources/fonts/inter/Inter-Medium.ttf")
         format("opentype");

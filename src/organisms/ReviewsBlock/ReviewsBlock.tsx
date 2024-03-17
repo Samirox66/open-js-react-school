@@ -13,9 +13,11 @@ export default function ReviewsBlock() {
         ));
     return (
         <section className={Css.block}>
-            <H3Title color="dark">
-                <ColoredText color="#6C5FBC">Customer Say</ColoredText>
-            </H3Title>
+            <div className={Css.title}>
+                <H3Title color="dark">
+                    <ColoredText color="#6C5FBC">Customer Say</ColoredText>
+                </H3Title>
+            </div>
             <div className={Css.reviews}>
                 <Review username="@omottley2h" review={review} />
                 <Slider>{reviews}</Slider>

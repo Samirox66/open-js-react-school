@@ -2,6 +2,8 @@ import { ColoredText, H3Title } from "../../atoms";
 import { Accordion } from "../../molecules";
 import Css from "./FAQBlock.module.css";
 
+import lines from "./imgs/lines.png";
+
 export default function FAQBlock() {
     return (
         <section className={Css.block}>
@@ -10,6 +12,7 @@ export default function FAQBlock() {
                     Frequently Asked{" "}
                     <ColoredText color="#6C5FBC">Questions</ColoredText>
                 </H3Title>
+                <img src={lines} className={Css.lines} />
             </div>
             <Accordion
                 options={[

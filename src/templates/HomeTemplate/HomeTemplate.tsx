@@ -10,8 +10,6 @@ import {
     StarterBlock,
 } from "../../organisms";
 
-import Css from "./HomeTemplate.module.css";
-
 export default function HomeTemplate() {
     return (
         <>
