@@ -4,7 +4,7 @@ import Css from "./Button.module.css";
 interface ButtonProps extends PropsWithChildren {
     type: "primary" | "secondary";
     width?: string;
-    onClick: MouseEventHandler<HTMLButtonElement>;
+    onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
 export default function Button({

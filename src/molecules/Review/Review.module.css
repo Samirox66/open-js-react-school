@@ -1,4 +1,9 @@
 .review {
+    padding: 0 27px 31px 28px;
+    box-sizing: border-box;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     padding: 40px 42px 47px 42px;
@@ -6,7 +11,7 @@
     border-radius: 20.89px;
     gap: 8px;
     box-shadow: 0 31.34px 41.79px 0 rgba(0, 0, 0, 0.1608);
-    width: 528px;
+    min-width: 528px;
 }
 
 .username {

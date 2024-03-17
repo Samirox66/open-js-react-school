@@ -4,7 +4,7 @@ import Css from "./ReviewsBlock.module.css";
 
 export default function ReviewsBlock() {
     const review = "I cannot believe how I found you, this is so pretty.";
-    const reviews = Array(3)
+    const reviews = Array(2)
         .fill(review)
         .map((review, index) => (
             <li key={index}>

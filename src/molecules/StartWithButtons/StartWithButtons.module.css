@@ -1,0 +1,39 @@
+.block {
+    max-width: 572px;
+}
+
+.overContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.divider {
+    width: 54px;
+    border: 1px solid #201f1f;
+    opacity: 0.2;
+}
+
+.over {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 120%;
+    color: #201f1f;
+    opacity: 0.2;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 17px;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 54px;
+}

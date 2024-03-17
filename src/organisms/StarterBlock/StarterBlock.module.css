@@ -3,4 +3,50 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+}
+
+.imgs {
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dishContainer {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dish {
+    position: relative;
+    right: 41px;
+}
+
+.foodContainer {
+    position: relative;
+    left: 111.38px;
+    display: flex;
+    align-items: flex-start;
+    max-width: 448px;
+}
+
+.graphContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.graph {
+    position: relative;
+    left: 38px;
+    box-shadow: 13.41px -16.76px 27.93px 0 rgba(0, 0, 0, 0.15);
+}
+
+.arrow {
+    position: relative;
+    top: 55px;
+    right: 44.38px;
 }

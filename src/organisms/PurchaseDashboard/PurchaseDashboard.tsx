@@ -1,4 +1,4 @@
-import { ColoredText, H2Title } from "../../atoms";
+import { ColoredText, Divider, H2Title } from "../../atoms";
 import { Dish } from "../../molecules";
 import Css from "./PurchaseDashboard.module.css";
 import { dishesMeta } from "./data";
@@ -17,14 +17,18 @@ export default function PurchaseDashboard() {
     ));
     return (
         <section className={Css.block}>
-            <div className={Css.container}>
-                <H2Title>
-                    Control <ColoredText color="#6C5FBC">Purchases</ColoredText>{" "}
-                    Via Dashboard
-                </H2Title>
-                <ul className={Css.dishes}>{dishes}</ul>
+            <div className={Css.content}>
+                <div className={Css.container}>
+                    <H2Title>
+                        Control{" "}
+                        <ColoredText color="#6C5FBC">Purchases</ColoredText> Via
+                        Dashboard
+                    </H2Title>
+                    <ul className={Css.dishes}>{dishes}</ul>
+                </div>
+                <img className={Css.img} src={purchase} alt="statistics" />
             </div>
-            <img className={Css.img} src={purchase} alt="statistics" />
+            <Divider />
         </section>
     );
 }

@@ -16,14 +16,22 @@ export default function AccordionPanel({
 }: AccordionPanelProps) {
     return (
         <li className={Css.panel}>
-            <div className={Css.questionContainer}>
-                <p className={Css.question}>{question}</p>
+            <div className={Css.containerWithoutDivider}>
+                <div className={Css.questionContainer}>
+                    <p className={Css.question}>{question}</p>
 
-                <button onClick={onOpen} className={Css.openBtn}>
-                    {isOpen ? "+" : "-"}
-                </button>
+                    <button
+                        onClick={onOpen}
+                        className={Css.openBtn}
+                        aria-label={isOpen ? "Close answer" : "Open answer"}
+                    >
+                        {isOpen ? "+" : "-"}
+                    </button>
+                </div>
+                <p className={Css.answer} data-open={isOpen}>
+                    {answer}
+                </p>
             </div>
-            {isOpen && <p className={Css.answer}>{answer}</p>}
             <Divider />
         </li>
     );

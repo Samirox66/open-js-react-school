@@ -12,6 +12,11 @@
     flex-direction: column;
 }
 
+.containerWithoutDivider {
+    display: flex;
+    flex-direction: column;
+}
+
 .questionContainer {
     display: flex;
     width: 100%;
@@ -36,8 +41,16 @@
     line-height: 160%;
     color: #686868;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     animation: fade-in 1s ease;
+    max-height: 0;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.answer[data-open="true"] {
+    max-height: 200px;
+    margin-bottom: 40px;
 }
 
 .openBtn {

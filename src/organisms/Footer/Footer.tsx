@@ -8,7 +8,12 @@ export default function Footer() {
     return (
         <footer className={Css.footer}>
             <div className={Css.horizontalContainer}>
-                <Logo imageSrc={logo} alt="logo" />
+                <Logo
+                    imageSrc={logo}
+                    alt="logo"
+                    width="61.88px"
+                    height="57px"
+                />
                 <Menu
                     links={[
                         { label: "Recipes", href: "#" },

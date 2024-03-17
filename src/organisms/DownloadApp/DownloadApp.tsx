@@ -1,8 +1,9 @@
-import { Button, ColoredText, Divider, H2Title } from "../../atoms";
+import { Button, ColoredText, Divider, H2Title, Paragraph } from "../../atoms";
 import Css from "./DownloadApp.module.css";
 
 import mobile from "./imgs/Mobile.png";
 import arrow from "./imgs/Arrow.png";
+import curvedArrow from "./imgs/curvedArrow.png";
 
 export default function DownloadApp() {
     const qualities = [
@@ -10,7 +11,7 @@ export default function DownloadApp() {
         "These foods promote overall wellness by support healthy digestion and boosting immunity",
     ].map((quality, index) => (
         <li key={index}>
-            <p className={Css.quality}>{quality}</p>
+            <Paragraph type="big_gray">{quality}</Paragraph>
         </li>
     ));
     return (
@@ -24,10 +25,13 @@ export default function DownloadApp() {
                         Your Health
                     </H2Title>
                     <ul className={Css.qualities}>{qualities}</ul>
-                    <Button type="primary" onClick={() => {}}>
-                        Download
-                        <img src={arrow} />
-                    </Button>
+                    <div className={Css.buttonContainer}>
+                        <Button type="primary">
+                            Download
+                            <img src={arrow} />
+                        </Button>
+                        <img src={curvedArrow} className={Css.arrow} />
+                    </div>
                 </section>
             </div>
             <Divider />
