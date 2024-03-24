@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { H4Title, Rating, Tags } from "../../atoms";
 import Css from "./ArticlePreview.module.css";
+import TextClamp from "react-string-clamp"
 
 export interface ArticlePreviewProps {
     title: string;
@@ -25,7 +26,7 @@ export default function ArticlePreview({
                     <Tags tags={tags} />
                     <Rating rating={rating} />
                 </div>
-                <p className={Css.paragraph}>{text}</p>
+                <TextClamp className={Css.paragraph} text={text} lines={3} />
             </Link>
         </div>
     );
