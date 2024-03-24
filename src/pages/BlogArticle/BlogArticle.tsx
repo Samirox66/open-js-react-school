@@ -1,6 +1,5 @@
-import { useParams } from "react-router-dom";
+import { ArticleTemplate } from "../../templates";
 
 export default function BlogArticle() {
-    const { id } = useParams();
-    return <>{id}</>;
+    return <ArticleTemplate />;
 }

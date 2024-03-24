@@ -1,0 +1,13 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 59px;
+    padding: 94px 0 60px 0;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+}

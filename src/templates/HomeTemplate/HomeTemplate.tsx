@@ -2,6 +2,8 @@ import {
     DownloadApp,
     FAQBlock,
     Features,
+    Footer,
+    Header,
     Lunch,
     PurchaseDashboard,
     ReviewsBlock,
@@ -11,6 +13,7 @@ import {
 export default function HomeTemplate() {
     return (
         <>
+            <Header />
             <StarterBlock />
             <Features />
             <DownloadApp />
@@ -18,6 +21,7 @@ export default function HomeTemplate() {
             <PurchaseDashboard />
             <ReviewsBlock />
             <FAQBlock />
+            <Footer />
         </>
     );
 }

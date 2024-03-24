@@ -1,0 +1,17 @@
+.comments {
+    padding: 0 122px 149px 122px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 77px;
+}
+
+.title {
+    margin-left: 28px;
+}
+
+.commentsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 87px;
+}

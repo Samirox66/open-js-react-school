@@ -10,6 +10,10 @@ import AccordionPanel, {
 } from "./AccordionPanel/AccordionPanel";
 import Review from "./Review/Review";
 import Slider from "./Slider/Slider";
+import PaginationButtons from "./PaginationButtons/PaginationButtons";
+import ArticlePreview, {
+    ArticlePreviewProps,
+} from "./ArticlePreview/ArticlePreview";
 
 export {
     Menu,
@@ -22,5 +26,13 @@ export {
     AccordionPanel,
     Review,
     Slider,
+    PaginationButtons,
+    ArticlePreview,
 };
-export type { FeatureProps, DishInfoProps, DishProps, AccordionPanelProps };
+export type {
+    FeatureProps,
+    DishInfoProps,
+    DishProps,
+    AccordionPanelProps,
+    ArticlePreviewProps,
+};
