@@ -15,6 +15,7 @@ import ScrollToHashElement from "./ScrollToHashElement/ScrollToHashElement";
 import ArrowButton from "./ArrowButton/ArrowButton";
 import Tags from "./Tags/Tags";
 import User from "./User/User";
+import Loader from "./Loader/Loader";
 
 export {
     Divider,
@@ -34,5 +35,6 @@ export {
     ArrowButton,
     Tags,
     User,
+    Loader,
 };
 export type { LinkProps };

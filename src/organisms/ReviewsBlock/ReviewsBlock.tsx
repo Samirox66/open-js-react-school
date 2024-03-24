@@ -1,5 +1,5 @@
 import { useGetCommentsQuery } from "../../app/apis/commentsApi";
-import { ColoredText, H3Title } from "../../atoms";
+import { ColoredText, H3Title, Loader } from "../../atoms";
 import { Review } from "../../molecules";
 import Css from "./ReviewsBlock.module.css";
 import Slider from "react-slick";
@@ -27,7 +27,7 @@ export default function ReviewsBlock() {
                 </H3Title>
             </div>
             <div className={Css.reviews}>
-                {isLoading && <p>Loading...</p>}
+                <Loader isLoading={isLoading} />
                 {reviews && <Slider {...settings}>{reviews}</Slider>}
             </div>
         </section>

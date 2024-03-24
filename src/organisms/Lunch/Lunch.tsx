@@ -1,5 +1,5 @@
 import { useGetRecipesByMealTypeQuery } from "../../app/apis/recipesApi";
-import { ColoredText, Divider, H3Title } from "../../atoms";
+import { ColoredText, Divider, H3Title, Loader } from "../../atoms";
 import { DishInfo } from "../../molecules";
 import Css from "./Lunch.module.css";
 
@@ -29,7 +29,7 @@ export default function Lunch() {
             <H3Title color="dark">
                 Our Top <ColoredText color="#6C5FBC">Lunch</ColoredText>
             </H3Title>
-            {isLoading && <p>Loading...</p>}
+            <Loader isLoading={isLoading} />
             <div className={Css.lunchesContainer}>{dishes}</div>
             <Divider />
         </section>

@@ -1,7 +1,15 @@
 import { useNavigate, useParams } from "react-router-dom";
 import Css from "./Article.module.css";
 import { useGetArticleByIdQuery } from "../../app/apis/articlesApi";
-import { Button, H3Title, Paragraph, Rating, Tags, User } from "../../atoms";
+import {
+    Button,
+    H3Title,
+    Loader,
+    Paragraph,
+    Rating,
+    Tags,
+    User,
+} from "../../atoms";
 
 import arrow from "./imgs/arrowRight.png";
 
@@ -12,7 +20,7 @@ export default function Article() {
 
     const navigate = useNavigate();
 
-    if (isArticleLoading) return <p>Loading...</p>;
+    if (isArticleLoading) return <Loader isLoading={isArticleLoading} />;
 
     if (!article) return <p>No data</p>;
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useGetArticlesQuery } from "../../app/apis/articlesApi";
-import { ColoredText, H3Title } from "../../atoms";
+import { ColoredText, H3Title, Loader } from "../../atoms";
 import Css from "./ArticlesPreviewBlock.module.css";
 import { ArticlePreview, PaginationButtons } from "../../molecules";
 import { useSearchParams } from "react-router-dom";
@@ -16,6 +16,7 @@ export default function ArticlesPreviewBlock() {
 
     const articles = articlesData?.posts.map((article) => (
         <ArticlePreview
+            key={article.id}
             tags={article.tags}
             title={article.title}
             body={article.body}
@@ -29,7 +30,8 @@ export default function ArticlesPreviewBlock() {
                 Latest <ColoredText color="#6C5FBC">Articles</ColoredText>
             </H3Title>
             <section className={Css.articles}>
-                {isLoading ? <p>Loading</p> : articles}
+                <Loader isLoading={isLoading} />
+                {articles}
             </section>
             <PaginationButtons
                 onLeftButtonClick={() =>

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { H3Title } from "../../atoms";
+import { H3Title, Loader } from "../../atoms";
 import Css from "./CommentsBlock.module.css";
 import { Review } from "../../molecules";
 import { useGetCommentsByArticleIdQuery } from "../../app/apis/commentsApi";
@@ -20,7 +20,7 @@ export default function CommentsBlock() {
             <div className={Css.title}>
                 <H3Title color="dark">Comments</H3Title>
             </div>
-            {isLoading && <p>Loading...</p>}
+            <Loader isLoading={isLoading} />
             {comments && (
                 <div className={Css.commentsContainer}>{comments}</div>
             )}
