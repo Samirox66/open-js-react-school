@@ -1,0 +1,14 @@
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background-image: url(./imgs/BG.png);
+    padding: 55px 0;
+}
+
+.divider {
+    height: 124px;
+    border: 1px solid #c5c5c5;
+    opacity: 0.15;
+}

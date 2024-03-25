@@ -1,0 +1,15 @@
+.title {
+    font-family: "PublicSans", sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 2.7rem;
+    margin: 0px;
+}
+
+.light {
+    color: white;
+}
+
+.dark {
+    color: #323142;
+}

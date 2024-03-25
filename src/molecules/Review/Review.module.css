@@ -1,0 +1,34 @@
+.review {
+    padding: 0 27px 31px 28px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 42px 47px 42px;
+    box-sizing: border-box;
+    border-radius: 20.89px;
+    gap: 8px;
+    box-shadow: 0 31.34px 41.79px 0 rgba(0, 0, 0, 0.1608);
+    min-width: 528px;
+}
+
+.username {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.0445rem;
+    line-height: 1.565rem;
+    font-weight: 500;
+    color: #030314;
+}
+
+.reviewText {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.305rem;
+    color: #636363;
+}

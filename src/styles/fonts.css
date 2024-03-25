@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins") url("../resources/fonts/poppins/Poppins-SemiBold.ttf")
+        format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins") url("../resources/fonts/poppins/Poppins-Medium.ttf")
+        format("opentype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins") url("../resources/fonts/poppins/Poppins-Medium.ttf")
+        format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter") url("../resources/fonts/inter/Inter-Medium.ttf")
+        format("opentype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "PublicSans";
+    src: local("Inter") url("../resources/fonts/publicSans/PublicSans-Bold.ttf")
+        format("opentype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: local("Manrope") url("../resources/fonts/manrope/Manrope-Regular.ttf")
+        format("opentype");
+    font-weight: 400;
+}

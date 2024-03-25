@@ -1,0 +1,66 @@
+.dishInfo {
+    border-radius: 30.02px;
+    border: 1.25px solid #f4f4f6;
+    box-shadow: 5.95px 71.35px 35.67px 0 rgba(229, 229, 229, 0.7);
+    transition: top 0.5s ease;
+    position: relative;
+    top: 0;
+}
+
+.dishInfo:hover {
+    top: -20px;
+}
+
+.dishContainer {
+    display: flex;
+    gap: 62px;
+    align-items: center;
+    padding: 10px 0 18px 34px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontalContainer {
+    display: flex;
+    align-items: center;
+    gap: 2.86px;
+}
+
+.tag {
+    color: #daa31a;
+    background-color: #f7edd0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+    width: fit-content;
+    padding: 3px 6px 3px 7px;
+    box-sizing: border-box;
+    border-radius: 5.4px;
+    margin: 0;
+}
+
+.time {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    line-height: 1.29rem;
+    font-weight: 400;
+    color: #8e97a6;
+    margin: 0;
+}
+
+.favorite {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: "#DBD9EE";
+}
+
+.favorite:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

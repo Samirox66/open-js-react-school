@@ -1,0 +1,35 @@
+.card {
+    border-radius: 16.41px;
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+    padding: 8px 23px 7px 15px;
+    gap: 35px;
+    box-shadow: 0 16.41px 24.61px 0 rgba(70, 70, 70, 0.05);
+    width: 330px;
+}
+
+.dish {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.status {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 0.5rem;
+    line-height: 140%;
+    color: #323142;
+    margin: 0;
+}
+
+.time {
+    align-self: flex-end;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    font-size: 0.5rem;
+    color: #acadb9;
+}

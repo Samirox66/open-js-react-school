@@ -1,0 +1,22 @@
+.block {
+    padding: 120px 144px 164px 144px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 114.54px;
+    width: 100%;
+}
+
+.title {
+    max-width: 466px;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.lines {
+    position: relative;
+    top: -18.46px;
+}

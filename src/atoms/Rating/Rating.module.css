@@ -1,0 +1,14 @@
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 3.14px;
+}
+
+.text {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    line-height: 1.29rem;
+    font-weight: 400;
+    color: #8e97a6;
+    margin: 0;
+}

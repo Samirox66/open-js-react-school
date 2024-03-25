@@ -1,0 +1,29 @@
+.footer {
+    background-color: #eaeaea;
+    padding: 96px 96px 81px 96px;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontalContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rights {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    color: #999999;
+    margin: 0;
+}
+
+.margin {
+    margin-top: 26px;
+}
