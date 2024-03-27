@@ -14,7 +14,7 @@ import {
 import arrow from "./imgs/arrowRight.png";
 
 export default function Article() {
-    const { id } = useParams();
+    const { id, userId } = useParams();
     const { isLoading: isArticleLoading, data: article } =
         useGetArticleByIdQuery(id);
 
@@ -29,7 +29,7 @@ export default function Article() {
             <div className={Css.header}>
                 <H3Title color="dark">{article.title}</H3Title>
                 <div className={Css.userInfo}>
-                    <User />
+                    <User userId={Number(userId)} />
                     <div className={Css.verticalContainer}>
                         <Rating rating={article.reactions} />
                         <Tags tags={article.tags} />

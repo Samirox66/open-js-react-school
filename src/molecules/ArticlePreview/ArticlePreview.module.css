@@ -4,7 +4,7 @@
 }
 
 .card {
-    display: block;
+    display: flex;
     padding: 26px 18px 26px 20px;
     box-sizing: border-box;
     border-radius: 15.85px;
@@ -13,14 +13,14 @@
     text-decoration: none;
     max-width: 349px;
     height: 100%;
+    flex-direction: column;
+    gap: 19px;
 }
 
 .horizontalContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 28px;
-    margin-bottom: 19px;
 }
 
 .paragraph {
@@ -30,4 +30,10 @@
     color: #081420;
     font-size: 0.9rem;
     line-height: 1.355rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
