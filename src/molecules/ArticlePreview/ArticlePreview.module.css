@@ -30,7 +30,4 @@
     color: #081420;
     font-size: 0.9rem;
     line-height: 1.355rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
