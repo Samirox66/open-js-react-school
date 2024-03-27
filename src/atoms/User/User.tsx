@@ -4,9 +4,10 @@ import { useGetUserByIdQuery } from "../../app/apis/usersApi";
 import { Loader } from "..";
 
 export default function User() {
-    const { id } = useParams();
+    const { userId } = useParams();
 
-    const { isLoading: isUserLoading, data: user } = useGetUserByIdQuery(id);
+    const { isLoading: isUserLoading, data: user } =
+        useGetUserByIdQuery(userId);
 
     if (isUserLoading) return <Loader isLoading={isUserLoading} />;
 

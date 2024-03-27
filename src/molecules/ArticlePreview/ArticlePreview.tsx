@@ -8,6 +8,7 @@ export interface ArticlePreviewProps {
     body: string;
     tags: string[];
     id: number;
+    userId: number;
 }
 
 export default function ArticlePreview({
@@ -16,10 +17,11 @@ export default function ArticlePreview({
     body: text,
     tags,
     id,
+    userId,
 }: ArticlePreviewProps) {
     return (
         <div className={Css.container}>
-            <Link className={Css.card} to={`/blog/${id}`}>
+            <Link className={Css.card} to={`/blog/${id}/${userId}`}>
                 <H4Title>{title}</H4Title>
                 <div className={Css.horizontalContainer}>
                     <Tags tags={tags} />

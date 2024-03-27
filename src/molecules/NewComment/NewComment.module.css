@@ -1,0 +1,14 @@
+.newComment {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    padding: 0 98px 0 0;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 51px;
+}

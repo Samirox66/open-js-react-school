@@ -16,6 +16,7 @@ import ArrowButton from "./ArrowButton/ArrowButton";
 import Tags from "./Tags/Tags";
 import User from "./User/User";
 import Loader from "./Loader/Loader";
+import TextArea from "./TextArea/TextArea";
 
 export {
     Divider,
@@ -36,5 +37,6 @@ export {
     Tags,
     User,
     Loader,
+    TextArea,
 };
 export type { LinkProps };

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useGetArticlesQuery } from "../../app/apis/articlesApi";
 import { ColoredText, H3Title, Loader } from "../../atoms";
 import Css from "./ArticlesPreviewBlock.module.css";
@@ -22,6 +21,7 @@ export default function ArticlesPreviewBlock() {
             body={article.body}
             reactions={article.reactions}
             id={article.id}
+            userId={article.userId}
         />
     ));
     return (

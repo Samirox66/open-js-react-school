@@ -25,8 +25,6 @@ export default function Loader({ isLoading }: LoaderProps) {
         };
     }, [isLoading]);
 
-    console.log(dots);
-
     if (!isLoading) return;
 
     return (

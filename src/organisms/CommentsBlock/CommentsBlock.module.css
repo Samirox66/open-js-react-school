@@ -1,5 +1,5 @@
 .comments {
-    padding: 0 122px 149px 122px;
+    padding: 0 122px 149px 98px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -7,11 +7,12 @@
 }
 
 .title {
-    margin-left: 28px;
+    margin-left: 52px;
 }
 
 .commentsContainer {
     display: flex;
     flex-direction: column;
     gap: 87px;
+    margin-left: 24px;
 }

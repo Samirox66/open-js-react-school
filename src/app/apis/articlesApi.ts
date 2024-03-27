@@ -14,7 +14,7 @@ export const articlesApi = createApi({
     endpoints: (builder) => ({
         getArticles: builder.query<IArticlesPreviewResponse, number>({
             query: (start) =>
-                `?limit=12&skip=${start}&select=title,body,text,reactions,id,tags`,
+                `?limit=12&skip=${start}&select=title,body,text,reactions,id,tags,userId`,
         }),
         getArticleById: builder.query<ArticlePreviewProps, string | undefined>({
             query: (id) => `/${id}`,

@@ -11,7 +11,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/blog" element={<Blog />} />
-                    <Route path="/blog/:id" element={<BlogArticle />} />
+                    <Route path="/blog/:id/:userId" element={<BlogArticle />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
                 <ScrollToHashElement />
