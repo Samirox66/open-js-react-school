@@ -2,11 +2,7 @@ import { useParams } from "react-router-dom";
 import { H3Title, Loader } from "../../atoms";
 import Css from "./CommentsBlock.module.css";
 import { NewComment, Review } from "../../molecules";
-import {
-    IComment,
-    useGetCommentsByArticleIdQuery,
-} from "../../app/apis/commentsApi";
-import { useState } from "react";
+import { useGetCommentsByArticleIdQuery } from "../../app/apis/commentsApi";
 import { useAppSelector } from "../../app/hooks";
 import { selectComments } from "../../app/slices/commentsSlice";
 
