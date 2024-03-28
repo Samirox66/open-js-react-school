@@ -5,5 +5,9 @@ interface ColoredTextProps extends PropsWithChildren {
 }
 
 export default function ColoredText({ children, color }: ColoredTextProps) {
-    return <span style={{ color }}>{children}</span>;
+    return (
+        <span data-testid="colored-text" style={{ color }}>
+            {children}
+        </span>
+    );
 }
