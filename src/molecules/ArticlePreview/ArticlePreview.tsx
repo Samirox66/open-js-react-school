@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { H4Title, Rating, Tags, User } from "../../atoms";
+import { H4Title, Rating, Tags } from "../../atoms";
+import { User } from "..";
 import Css from "./ArticlePreview.module.css";
 import TextClamp from "react-string-clamp";
 

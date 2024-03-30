@@ -1,6 +1,6 @@
 import Css from "./User.module.css";
 import { useGetUserByIdQuery } from "../../app/apis/usersApi";
-import { Error, Loader } from "..";
+import { Error, Loader } from "../../atoms";
 
 interface UserProps {
     userId?: number;

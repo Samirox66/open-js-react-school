@@ -20,6 +20,7 @@
     line-height: 1.565rem;
     font-weight: 500;
     color: #030314;
+    font-style: normal;
 }
 
 .reviewText {
@@ -30,6 +31,7 @@
     font-size: 0.9rem;
     line-height: 1.305rem;
     color: #636363;
+    font-style: normal;
 }
 
 .userContainer {

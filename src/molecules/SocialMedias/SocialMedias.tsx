@@ -8,7 +8,7 @@ import { Logo } from "../../atoms";
 export default function SocialMedias() {
     const socialMedias = [insta, facebook, inImage, twitter].map(
         (value, index) => (
-            <li key={index} className={Css.element}>
+            <li key={index}>
                 <Logo imageSrc={value} alt={value} />
             </li>
         )

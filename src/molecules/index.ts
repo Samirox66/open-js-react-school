@@ -15,6 +15,7 @@ import ArticlePreview, {
     ArticlePreviewProps,
 } from "./ArticlePreview/ArticlePreview";
 import NewComment from "./NewComment/NewComment";
+import User from "./User/User";
 
 export {
     Menu,
@@ -30,6 +31,7 @@ export {
     PaginationButtons,
     ArticlePreview,
     NewComment,
+    User,
 };
 export type {
     FeatureProps,

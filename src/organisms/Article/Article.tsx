@@ -9,8 +9,8 @@ import {
     Paragraph,
     Rating,
     Tags,
-    User,
 } from "../../atoms";
+import { User } from "../../molecules";
 
 import arrow from "./imgs/arrowRight.png";
 

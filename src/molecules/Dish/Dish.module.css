@@ -22,6 +22,7 @@
     line-height: 140%;
     color: #323142;
     margin: 0;
+    font-style: normal;
 }
 
 .time {
@@ -32,6 +33,7 @@
     line-height: 140%;
     font-size: 0.5rem;
     color: #acadb9;
+    font-style: normal;
 }
 
 .cancelled {
