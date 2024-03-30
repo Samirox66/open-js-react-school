@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { H3Title, Loader } from "../../atoms";
+import { Error, H3Title, Loader } from "../../atoms";
 import Css from "./CommentsBlock.module.css";
 import { NewComment, Review } from "../../molecules";
 import { useGetCommentsByArticleIdQuery } from "../../app/apis/commentsApi";
@@ -8,8 +8,11 @@ import { selectComments } from "../../app/slices/commentsSlice";
 
 export default function CommentsBlock() {
     const { id } = useParams();
-    const { isLoading, data: commentsData } =
-        useGetCommentsByArticleIdQuery(id);
+    const {
+        isLoading,
+        data: commentsData,
+        isError,
+    } = useGetCommentsByArticleIdQuery(id);
 
     const postedCommentsData = useAppSelector(selectComments);
 
@@ -36,6 +39,9 @@ export default function CommentsBlock() {
                 <H3Title color="dark">Comments</H3Title>
             </div>
             <Loader isLoading={isLoading} />
+            <Error isError={isError}>
+                Error loading comments, try to reload
+            </Error>
             {comments && (
                 <div className={Css.commentsContainer}>
                     {comments}

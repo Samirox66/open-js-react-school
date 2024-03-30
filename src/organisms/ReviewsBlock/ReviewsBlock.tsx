@@ -1,11 +1,11 @@
 import { useGetCommentsQuery } from "../../app/apis/commentsApi";
-import { ColoredText, H3Title, Loader } from "../../atoms";
+import { ColoredText, Error, H3Title, Loader } from "../../atoms";
 import { Review } from "../../molecules";
 import Css from "./ReviewsBlock.module.css";
 import Slider from "react-slick";
 
 export default function ReviewsBlock() {
-    const { isLoading, data: reviewsData } = useGetCommentsQuery();
+    const { isLoading, data: reviewsData, isError } = useGetCommentsQuery();
     const reviews = reviewsData?.comments?.slice(0, 6)?.map((review, index) => (
         <li key={index}>
             <Review review={review.body} username={review.user.username} />
@@ -27,6 +27,9 @@ export default function ReviewsBlock() {
                 </H3Title>
             </div>
             <div className={Css.reviews}>
+                <Error isError={isError}>
+                    Error loading comments, try to reload page
+                </Error>
                 <Loader isLoading={isLoading} />
                 {reviews && <Slider {...settings}>{reviews}</Slider>}
             </div>

@@ -1,10 +1,14 @@
 import { useGetRecipesByMealTypeQuery } from "../../app/apis/recipesApi";
-import { ColoredText, Divider, H3Title, Loader } from "../../atoms";
+import { ColoredText, Divider, Error, H3Title, Loader } from "../../atoms";
 import { DishInfo } from "../../molecules";
 import Css from "./Lunch.module.css";
 
 export default function Lunch() {
-    const { isLoading, data: dishesData } = useGetRecipesByMealTypeQuery();
+    const {
+        isLoading,
+        data: dishesData,
+        isError,
+    } = useGetRecipesByMealTypeQuery();
 
     const numberOfDishesToShow = 3;
 
@@ -30,6 +34,9 @@ export default function Lunch() {
                 Our Top <ColoredText color="#6C5FBC">Lunch</ColoredText>
             </H3Title>
             <Loader isLoading={isLoading} />
+            <Error isError={isError}>
+                Error loading top lunch, try to reload page
+            </Error>
             <div className={Css.lunchesContainer}>{dishes}</div>
             <Divider />
         </section>

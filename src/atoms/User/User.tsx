@@ -1,6 +1,6 @@
 import Css from "./User.module.css";
 import { useGetUserByIdQuery } from "../../app/apis/usersApi";
-import { Loader } from "..";
+import { Error, Loader } from "..";
 
 interface UserProps {
     userId?: number;
@@ -15,7 +15,12 @@ export default function User({ userId }: UserProps) {
 
     if (isUserLoading) return <Loader isLoading={isUserLoading} />;
 
-    if (isError) return <p>Error</p>;
+    if (isError)
+        return (
+            <Error isError={isError}>
+                Error loading user, try to reload page
+            </Error>
+        );
 
     return (
         <div className={Css.user}>

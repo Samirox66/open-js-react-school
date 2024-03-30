@@ -17,6 +17,7 @@ import Tags from "./Tags/Tags";
 import User from "./User/User";
 import Loader from "./Loader/Loader";
 import TextArea from "./TextArea/TextArea";
+import Error from "./Error/Error";
 
 export {
     Divider,
@@ -38,5 +39,6 @@ export {
     User,
     Loader,
     TextArea,
+    Error,
 };
 export type { LinkProps };
