@@ -13,3 +13,15 @@ npm install
 ```bash
 npm run dev
 ```
+
+## Запуск тестов
+
+```bash
+npm run test
+```
+
+## Запуск тестов с покрытием
+
+```bash
+npm run coverage
+```
