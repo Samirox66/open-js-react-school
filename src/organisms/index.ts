@@ -7,6 +7,9 @@ import Lunch from "./Lunch/Lunch";
 import PurchaseDashboard from "./PurchaseDashboard/PurchaseDashboard";
 import ReviewsBlock from "./ReviewsBlock/ReviewsBlock";
 import FAQBlock from "./FAQBlock/FAQBlock";
+import ArticlesPreviewBlock from "./ArticlesPreviewBlock/ArticlesPreviewBlock";
+import Article from "./Article/Article";
+import CommentsBlock from "./CommentsBlock/CommentsBlock";
 
 export {
     Header,
@@ -18,4 +21,7 @@ export {
     PurchaseDashboard,
     ReviewsBlock,
     FAQBlock,
+    ArticlesPreviewBlock,
+    Article,
+    CommentsBlock,
 };

@@ -1,5 +1,5 @@
 .review {
-    padding: 0 27px 31px 28px;
+    padding: 10px 27px 31px 28px;
     box-sizing: border-box;
 }
 
@@ -10,8 +10,7 @@
     box-sizing: border-box;
     border-radius: 20.89px;
     gap: 8px;
-    box-shadow: 0 31.34px 41.79px 0 rgba(0, 0, 0, 0.1608);
-    min-width: 528px;
+    box-shadow: 1px 5.34px 21.79px 0 rgba(0, 0, 0, 0.1608);
 }
 
 .username {
@@ -31,4 +30,10 @@
     font-size: 0.9rem;
     line-height: 1.305rem;
     color: #636363;
+}
+
+.userContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }

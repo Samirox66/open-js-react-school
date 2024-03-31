@@ -16,9 +16,9 @@ export default function Footer() {
                 />
                 <Menu
                     links={[
-                        { label: "Recipes", href: "#" },
-                        { label: "FAQ", href: "#" },
-                        { label: "Blog", href: "#" },
+                        { label: "Recipes", href: "/#recipes" },
+                        { label: "FAQ", href: "/#faq" },
+                        { label: "Blog", href: "/blog" },
                     ]}
                 />
             </div>

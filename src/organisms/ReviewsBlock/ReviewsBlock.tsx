@@ -1,16 +1,24 @@
-import { ColoredText, H3Title } from "../../atoms";
-import { Review, Slider } from "../../molecules";
+import { useGetCommentsQuery } from "../../app/apis/commentsApi";
+import { ColoredText, H3Title, Loader } from "../../atoms";
+import { Review } from "../../molecules";
 import Css from "./ReviewsBlock.module.css";
+import Slider from "react-slick";
 
 export default function ReviewsBlock() {
-    const review = "I cannot believe how I found you, this is so pretty.";
-    const reviews = Array(2)
-        .fill(review)
-        .map((review, index) => (
-            <li key={index}>
-                <Review review={review} />
-            </li>
-        ));
+    const { isLoading, data: reviewsData } = useGetCommentsQuery();
+    const reviews = reviewsData?.comments?.slice(0, 6)?.map((review, index) => (
+        <li key={index}>
+            <Review review={review.body} username={review.user.username} />
+        </li>
+    ));
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+    };
     return (
         <section className={Css.block}>
             <div className={Css.title}>
@@ -19,8 +27,8 @@ export default function ReviewsBlock() {
                 </H3Title>
             </div>
             <div className={Css.reviews}>
-                <Review username="@omottley2h" review={review} />
-                <Slider>{reviews}</Slider>
+                <Loader isLoading={isLoading} />
+                {reviews && <Slider {...settings}>{reviews}</Slider>}
             </div>
         </section>
     );

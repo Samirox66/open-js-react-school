@@ -1,0 +1,33 @@
+.container {
+    box-sizing: border-box;
+    padding: 19px 17px 21px 15px;
+}
+
+.card {
+    display: block;
+    padding: 26px 18px 26px 20px;
+    box-sizing: border-box;
+    border-radius: 15.85px;
+    background-color: #ffffff;
+    box-shadow: 0 3.91px 46.86px 0 rgba(197, 197, 197, 0.25);
+    text-decoration: none;
+    max-width: 349px;
+    height: 100%;
+}
+
+.horizontalContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 19px;
+}
+
+.paragraph {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #081420;
+    font-size: 0.9rem;
+    line-height: 1.355rem;
+}

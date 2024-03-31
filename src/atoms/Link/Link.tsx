@@ -1,4 +1,5 @@
 import Css from "./Link.module.css";
+import { Link as RLink } from "react-router-dom";
 
 export interface LinkProps {
     label: string;
@@ -7,8 +8,8 @@ export interface LinkProps {
 
 export default function Link({ label, href }: LinkProps) {
     return (
-        <a className={Css.link} href={href}>
+        <RLink className={Css.link} to={href}>
             {label}
-        </a>
+        </RLink>
     );
 }

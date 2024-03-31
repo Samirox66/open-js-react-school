@@ -6,7 +6,7 @@ import lines from "./imgs/lines.png";
 
 export default function FAQBlock() {
     return (
-        <section className={Css.block}>
+        <section className={Css.block} id="faq">
             <div className={Css.title}>
                 <H3Title color="dark">
                     Frequently Asked{" "}

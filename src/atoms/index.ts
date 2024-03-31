@@ -9,7 +9,13 @@ import ColoredText from "./ColoredText/ColoredText";
 import Rating from "./Rating/Rating";
 import H1Title from "./H1Title/H1Title";
 import H2Title from "./H2Title/H2Title";
+import H4Title from "./H4Title/H4Title";
 import H6Title from "./H6Title/H6Title";
+import ScrollToHashElement from "./ScrollToHashElement/ScrollToHashElement";
+import ArrowButton from "./ArrowButton/ArrowButton";
+import Tags from "./Tags/Tags";
+import User from "./User/User";
+import Loader from "./Loader/Loader";
 
 export {
     Divider,
@@ -23,6 +29,12 @@ export {
     Rating,
     H1Title,
     H2Title,
+    H4Title,
     H6Title,
+    ScrollToHashElement,
+    ArrowButton,
+    Tags,
+    User,
+    Loader,
 };
 export type { LinkProps };

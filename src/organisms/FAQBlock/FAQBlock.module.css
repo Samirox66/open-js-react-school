@@ -1,5 +1,5 @@
 .block {
-    padding: 120px 144px 164px 144px;
+    padding: 0 144px 164px 144px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
