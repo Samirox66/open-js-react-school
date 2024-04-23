@@ -3,6 +3,7 @@ import { articlesApi } from "./apis/articlesApi";
 import { usersApi } from "./apis/usersApi";
 import { commentsApi } from "./apis/commentsApi";
 import { recipesApi } from "./apis/recipesApi";
+import commentsReducer from "./slices/commentsSlice";
 
 export const store = configureStore({
     reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
         [usersApi.reducerPath]: usersApi.reducer,
         [commentsApi.reducerPath]: commentsApi.reducer,
         [recipesApi.reducerPath]: recipesApi.reducer,
+        commentsReducer,
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(

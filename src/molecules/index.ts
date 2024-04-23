@@ -14,6 +14,8 @@ import PaginationButtons from "./PaginationButtons/PaginationButtons";
 import ArticlePreview, {
     ArticlePreviewProps,
 } from "./ArticlePreview/ArticlePreview";
+import NewComment from "./NewComment/NewComment";
+import User from "./User/User";
 
 export {
     Menu,
@@ -28,6 +30,8 @@ export {
     Slider,
     PaginationButtons,
     ArticlePreview,
+    NewComment,
+    User,
 };
 export type {
     FeatureProps,

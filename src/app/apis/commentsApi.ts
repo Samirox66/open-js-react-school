@@ -4,7 +4,7 @@ interface IComments {
     comments: IComment[];
 }
 
-interface IComment {
+export interface IComment {
     user: {
         username: string;
     };
@@ -21,8 +21,21 @@ export const commentsApi = createApi({
         getComments: builder.query<IComments, void>({
             query: () => "",
         }),
+        postComment: builder.mutation<
+            IComment,
+            { postId: number; userId: number; body: string }
+        >({
+            query: (comment) => ({
+                url: "/add",
+                method: "POST",
+                body: comment,
+            }),
+        }),
     }),
 });
 
-export const { useGetCommentsByArticleIdQuery, useGetCommentsQuery } =
-    commentsApi;
+export const {
+    useGetCommentsByArticleIdQuery,
+    useGetCommentsQuery,
+    usePostCommentMutation,
+} = commentsApi;

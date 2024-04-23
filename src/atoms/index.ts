@@ -14,8 +14,9 @@ import H6Title from "./H6Title/H6Title";
 import ScrollToHashElement from "./ScrollToHashElement/ScrollToHashElement";
 import ArrowButton from "./ArrowButton/ArrowButton";
 import Tags from "./Tags/Tags";
-import User from "./User/User";
 import Loader from "./Loader/Loader";
+import TextArea from "./TextArea/TextArea";
+import Error from "./Error/Error";
 
 export {
     Divider,
@@ -34,7 +35,8 @@ export {
     ScrollToHashElement,
     ArrowButton,
     Tags,
-    User,
     Loader,
+    TextArea,
+    Error,
 };
 export type { LinkProps };

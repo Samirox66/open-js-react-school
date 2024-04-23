@@ -1,14 +1,26 @@
-import { useParams } from "react-router-dom";
 import Css from "./User.module.css";
 import { useGetUserByIdQuery } from "../../app/apis/usersApi";
-import { Loader } from "..";
+import { Error, Loader } from "../../atoms";
 
-export default function User() {
-    const { id } = useParams();
+interface UserProps {
+    userId?: number;
+}
 
-    const { isLoading: isUserLoading, data: user } = useGetUserByIdQuery(id);
+export default function User({ userId }: UserProps) {
+    const {
+        isLoading: isUserLoading,
+        data: user,
+        isError,
+    } = useGetUserByIdQuery(userId);
 
     if (isUserLoading) return <Loader isLoading={isUserLoading} />;
+
+    if (isError)
+        return (
+            <Error isError={isError}>
+                Error loading user, try to reload page
+            </Error>
+        );
 
     return (
         <div className={Css.user}>
