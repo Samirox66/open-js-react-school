@@ -6,7 +6,10 @@ import TextClamp from "react-string-clamp";
 
 export interface ArticlePreviewProps {
     title: string;
-    reactions: number;
+    reactions: {
+        likes: number;
+        dislikes: number;
+    };
     body: string;
     tags: string[];
     id: number;
@@ -23,12 +26,12 @@ export default function ArticlePreview({
 }: ArticlePreviewProps) {
     return (
         <div className={Css.container}>
-            <Link className={Css.card} to={`/blog/${id}/${userId}`}>
+            <Link className={Css.card} to={`${id}/${userId}`}>
                 <H4Title>{title}</H4Title>
                 <div className={Css.info}>
                     <div className={Css.horizontalContainer}>
                         <User userId={userId} />
-                        <Rating rating={rating} />
+                        <Rating rating={rating.likes} />
                     </div>
                     <Tags tags={tags} />
                 </div>

@@ -8,7 +8,7 @@ const INDEX_KEY = "start-index-of-articles";
 
 export default function ArticlesPreviewBlock() {
     const [searchParams, setSearchParams] = useSearchParams();
-    let startIndexOfArticles = Number(searchParams.get(INDEX_KEY));
+    const startIndexOfArticles = Number(searchParams.get(INDEX_KEY));
 
     const {
         isLoading,

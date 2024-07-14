@@ -9,9 +9,15 @@ function App() {
         <Provider store={store}>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/blog" element={<Blog />} />
-                    <Route path="/blog/:id/:userId" element={<BlogArticle />} />
+                    <Route path="/open-js-react-school" element={<Home />} />
+                    <Route
+                        path="/open-js-react-school/blog"
+                        element={<Blog />}
+                    />
+                    <Route
+                        path="/open-js-react-school/blog/:id/:userId"
+                        element={<BlogArticle />}
+                    />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
                 <ScrollToHashElement />

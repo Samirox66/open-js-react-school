@@ -38,7 +38,7 @@ export default function Article() {
                         <div className={Css.userInfo}>
                             <User userId={Number(userId)} />
                             <div className={Css.verticalContainer}>
-                                <Rating rating={article.reactions} />
+                                <Rating rating={article.reactions.likes} />
                                 <Tags tags={article.tags} />
                             </div>
                         </div>

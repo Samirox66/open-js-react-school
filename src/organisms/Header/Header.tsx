@@ -14,9 +14,12 @@ export default function Header() {
                 </div>
                 <Menu
                     links={[
-                        { label: "Recipes", href: "/#recipes" },
-                        { label: "FAQ", href: "/#faq" },
-                        { label: "Blog", href: "/blog" },
+                        {
+                            label: "Recipes",
+                            href: "/open-js-react-school/#recipes",
+                        },
+                        { label: "FAQ", href: "/open-js-react-school/#faq" },
+                        { label: "Blog", href: "/open-js-react-school/blog" },
                     ]}
                 />
             </div>
